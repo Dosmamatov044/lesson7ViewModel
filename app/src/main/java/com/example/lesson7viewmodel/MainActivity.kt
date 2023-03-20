@@ -52,7 +52,7 @@ lateinit var binding: ActivityMainBinding
     override fun onStop() {
         super.onStop()
 
-    viewModel.data.removeObserver {  }
+    viewModel.data.removeObservers(this)
     }
 
 
